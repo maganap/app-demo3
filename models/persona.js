@@ -14,4 +14,9 @@ var personaSchema = new Schema({
            default: Date.now} 
 });
 
+
+personaSchema.statics.hello = function(args){
+  return "Hello men";
+};
+
 module.exports = personaSchema; 
